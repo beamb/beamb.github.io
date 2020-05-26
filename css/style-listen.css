@@ -1,0 +1,123 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.listen {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.VolumeHandler {
+  height: 6vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4vh;
+}
+
+.mutebtn {
+  font-size: 1.125rem;
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.empty {
+  flex: auto;
+}
+
+.songselector {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.songselectortoggled {
+  display: none;
+}
+
+.songselector .icon {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5vh;
+  opacity: 0.8;
+}
+
+.footer-overlay {
+  display: none;
+}
+
+.footer-overlaytoggled {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-overlaytoggled .icon {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5vh;
+  opacity: 0.8;
+}
+
+.tracks {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.video img {
+  object-fit: cover;
+  min-width: 18.75rem;
+  height: 9.375rem;
+  padding: 0.125rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tracks::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.tracks {
+  -ms-overflow-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .video img {
+    min-width: 12.5rem;
+    height: 6.25rem;
+    padding: 0.0625rem;
+  }
+  .footer-overlaytoggled {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .footer-overlaytoggled .icon {
+    font-size: 1.5rem;
+  } 
+  .footer-overlaytoggled {
+    height: 50vh;
+  }
+  .songselector {
+    height: 20vh;
+  }
+  .songselector .icon {
+    font-size: 1.5rem;
+  }
+}

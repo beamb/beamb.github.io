@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listen – Bitty Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-listen.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Eczar:wght@600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&display=swap"
+    />
+    <link href="css/all.css" rel="stylesheet" />
+    <script defer src="js/all.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <video
+      playsinline
+      autoplay
+      muted
+      id="video-bg"
+      onended="playNext()"
+      src="img/Cry-Me-A-River.mp4"
+    >
+      Your browser does not support the video tag.
+    </video>
+    <div class="listen">
+      <div class="menu" id="Menu">
+        <a href="#" class="closebtn" onclick="closeMenu()">
+          &times;
+        </a>
+        <div class="menu-content">
+          <h2><a href="index.html">HOME</a></h2>
+          <p>
+            <a href="index.html" class="widgets"
+              ><i class="fas fa-home fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="listen.html">LISTEN</a></h2>
+          <p>
+            <a href="listen.html" class="widgets"
+              ><i class="fas fa-music fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="read.html">READ</a></h2>
+          <p>
+            <a href="read.html" class="widgets"
+              ><i class="far fa-newspaper fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="contact.html">CONTACT</a></h2>
+          <p>
+            <a href="contact.html" class="widgets"
+              ><i class="far fa-paper-plane fa-2x"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="navbar" id="NavBar">
+        <h2><a href="index.html">HOME</a></h2>
+        <h2><a href="listen.html">LISTEN</a></h2>
+        <h1><a href="index.html">Bitty Page</a></h1>
+        <h2><a href="read.html">READ</a></h2>
+        <h2><a href="contact.html">CONTACT</a></h2>
+        <a href="#" class="icon" onclick="openMenu()"
+          ><i class="fas fa-bars fa-2x"></i
+        ></a>
+      </div>
+      <div class="VolumeHandler">
+        <button class="mutebtn" id="MuteBtn" onclick="toggleMute()">
+          <i class="fas fa-volume-mute fa-3x"></i>
+        </button>
+      </div>
+      <div class="empty"></div>
+      <div class="songselector" id="SongSelector">
+        <a href="#" class="icon" onclick="show()"
+          ><i class="fas fa-chevron-up fa-2x"></i
+        ></a>
+      </div>
+      <div class="footer-overlay" id="Footer">
+        <a href="#" class="icon" onclick="hide()"
+          ><i class="fas fa-chevron-down fa-2x"></i
+        ></a>
+        <div class="tracks">
+          <div class="video">
+            <a href="#" onclick="changevideo(0)"
+              ><img
+                src="img/red-istanbul.jpg"
+                alt="Bitty Page A Novembre cover"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(1)"
+              ><img
+                src="https://img.youtube.com/vi/5fznh-6zmZ4/hqdefault.jpg"
+                alt="Bitty Page Blind Audition YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(2)"
+              ><img
+                src="https://img.youtube.com/vi/5bSlHbTPSDU/hqdefault.jpg"
+                alt="Bitty Page Non Ti Scordar Mai Di Me YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(3)"
+              ><img
+                src="img/bw-lausanne.jpg"
+                alt="Bitty Page Summertime cover"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(4)"
+              ><img
+                src="https://img.youtube.com/vi/qAsP_n06kgk/hqdefault.jpg"
+                alt="Bitty Page 7 Seconds with Youssou N'Dour YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(5)"
+              ><img
+                src="https://img.youtube.com/vi/7uyU5STAkVU/hqdefault.jpg"
+                alt="Bitty Page Why don't you do right YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(6)"
+              ><img
+                src="img/fete-de-la-musique-landscape.jpg"
+                alt="Bitty Page Crave You cover"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(7)"
+              ><img
+                src="https://img.youtube.com/vi/h5CiWfMBFko/hqdefault.jpg"
+                alt="Bitty Page Easy Lover with Phil Collins YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(8)"
+              ><img
+                src="img/profile-istanbul.jpg"
+                alt="Bitty Page Why don't you do right cover"
+                width="200"
+            /></a>
+          </div>
+          <div class="video">
+            <a href="#" onclick="changevideo(9)"
+              ><img
+                src="https://img.youtube.com/vi/ws9J25vwQ7k/hqdefault.jpg"
+                alt="Bitty Page Cry Me A River YouTube thumbnail"
+                width="200"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

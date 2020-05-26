@@ -1,0 +1,27 @@
+.home {
+  height: 100vh;
+  background-image: url("/img/profile-istanbul.jpg");
+  background-color: #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.empty {
+  flex: auto;
+}
+
+.somebar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.icons {
+  padding: 1.25vh;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read – Bitty Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-read.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Eczar:wght@600&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&display=swap"
+    />
+    <link href="css/all.css" rel="stylesheet" />
+    <script defer src="js/all.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="read">
+      <div class="menu" id="Menu">
+        <a href="#" class="closebtn" onclick="closeMenu()">
+          &times;
+        </a>
+        <div class="menu-content">
+          <h2><a href="index.html">HOME</a></h2>
+          <p>
+            <a href="index.html" class="widgets"
+              ><i class="fas fa-home fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="listen.html">LISTEN</a></h2>
+          <p>
+            <a href="listen.html" class="widgets"
+              ><i class="fas fa-music fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="read.html">READ</a></h2>
+          <p>
+            <a href="read.html" class="widgets"
+              ><i class="far fa-newspaper fa-2x"></i
+            ></a>
+          </p>
+          <h2><a href="contact.html">CONTACT</a></h2>
+          <p>
+            <a href="contact.html" class="widgets"
+              ><i class="far fa-paper-plane fa-2x"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div id="myPress" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()"
+          >&times;</a
+        >
+        <div class="overlay-content" id="OverlayContent">
+          <div class="mySlides">
+            <img src="nothing.jpg" id="slide" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <div class="navbar" id="NavBar">
+        <h2><a href="index.html">HOME</a></h2>
+        <h2><a href="listen.html">LISTEN</a></h2>
+        <h1><a href="index.html">Bitty Page</a></h1>
+        <h2><a href="read.html">READ</a></h2>
+        <h2><a href="contact.html">CONTACT</a></h2>
+        <a href="#" class="icon" onclick="openMenu()"
+          ><i class="fas fa-bars fa-2x"></i
+        ></a>
+      </div>
+      <div class="description">
+        <div class="textbox">
+          <p>
+            Musician and singer, Bitty Page was a talent on the Voice of
+            Switzerland TV show in 2014 as well as member of Orianne and Phil
+            Collins&apos; &quot;Little Dreams Foundation&quot;. Bitty delivers
+            sets which swing between Jazz Standards and Easy Listening with her
+            solo project.
+          </p>
+          <p><span id="subtitle">Short bio</span></p>
+          <p>
+            With her performances including only her doublebass and her voice,
+            Bitty Page has already appeared on stage on various occasions,
+            ranging from the famous &quot;Montreux Jazz Festival&quot; to
+            various Gala evenings. She has sung with Phil Collins, a duet with
+            Youssou N&apos;Dour and has shared the stage with Jermaine Jackson,
+            Bryan Adams, Arielle Dombasles, The Suga Babes, the late Natalie
+            Cole, and many others, as one can partly see on her YouTube page.<br /><br />
+            Born in the UK, raised in Switzerland, living in Denmark, Beatrice
+            Ambrosi de Magistris Verzier is a student in Software Design when
+            she is not on stage performing. She started to learn how to play the
+            doublebass on her own in 2010, after having studied classical piano
+            for almost 10 years in the Conservatoire de Musique de Montreux, and
+            isn&apos;t done learning yet!
+            <br />
+            Although voice and doublebass alone is an unusual combination, the
+            public demand has (fortunately) not yet ceased.
+          </p>
+          <p><span id="subtitle">Press Gallery</span></p>
+          <p>
+            A few words from the greatly missed Claude Nobs
+            <span id="italics">(A Small World Newsletter, 2011)&#58;</span>
+            <br /><br />
+            &quot;&#91;&#8230;&#93;Also on the menu? A spicy burlesque show by
+            Swiss performer Zoe Scarlett and music by the Little Dreams Band, a
+            group created by <span id="bold">Phil Collins</span> as part of his
+            Little Dreams Foundation to provide opportunities for talented
+            children. The show stealer, for those keeping score at home, was the
+            half-Gambian, half-Italian 17-year-old
+            <span id="bold">Beatrice Verzier</span>. &quot;I can tell you, she
+            is very, very good,&quot; said <span id="bold">Claude Nobs</span>,
+            CEO and founder of the Montreux Jazz Festival, who was heading to LA
+            to stay with his old friend <span id="bold">Quincy Jones</span>.
+            &quot;And the last time I was sitting in this room, twenty years
+            ago, I was watching <span id="bold">Ella Fitzgerald</span>,&quot; he
+            reminisced.&quot;
+          </p>
+          <table style="width: 100%;">
+            <tr>
+              <td style="padding-left: 10%;">
+                <a
+                  href="img/bitty-page-jazz-standards-1-page.pdf"
+                  target="_blank"
+                  >24heures (06/2010)</a
+                >
+              </td>
+              <td>
+                <a
+                  href="#"
+                  onclick="setSlides(['img/Locandina.jpg', 'img/24Heures-24feb2014-pg-1.png', 'img/24Heures-24feb2014-pg-2.png'])"
+                  >24heures (02/2014)</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10%;">
+                <a href="img/COTEMagazineGeneve.pdf" target="_blank"
+                  >COTE Magazine (10/2010)</a
+                >
+              </td>
+              <td>
+                <a href="#" onclick="setSlide('img/Le-Matin-24feb2014.png')"
+                  >Le Matin (02/2014)</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10%;">
+                <a href="img/Elle-complet.pdf" target="_blank"
+                  >ELLE Magazine (06/2012)</a
+                >
+              </td>
+              <td>
+                <a href="#" onclick="setSlide('img/Le-Régional-001.jpg')"
+                  >Le Régional (03/2014)</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10%;">
+                <a href="#" onclick="setSlide('img/Blick-24jan2014.png')"
+                  >Blick (02/2014)</a
+                >
+              </td>
+              <td>
+                <a href="#" onclick="setSlide('img/srf-1-radio_Page_1.png')"
+                  >Radio SRF1 (2014)</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 10%;">
+                <a
+                  href="img/«The-Voice»_-Tränen-Lampenfieber-und-ein-sexy-Kontrabass-Bluewin.pdf"
+                  target="_blank"
+                  >Bluewin (02/2014)</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
