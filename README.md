@@ -1,4 +1,4 @@
-# Portfolio website
+# Portfolio website - beatriceverzier.com
 
 Developed during the Frameworks and Architectures for the Web course in Spring 2020 at the IT University of Copenhagen
 
