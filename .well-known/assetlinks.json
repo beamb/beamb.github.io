@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.shortcut.badmv.linktarget",
+      "sha256_cert_fingerprints":
+      ["A7:63:19:F1:7C:EF:12:7F:CB:68:E2:5E:18:DF:0B:15:B4:E6:EA:37:71:3A:D8:63:CA:E9:03:AC:BD:73:B6:7E"]
+    }
+  }]
